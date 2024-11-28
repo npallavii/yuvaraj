@@ -1,0 +1,20 @@
+document.getElementById('booking-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Get form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const room = document.getElementById('room').value;
+    const date = document.getElementById('date').value;
+
+    // Simple validation
+    if (name && email && room && date) {
+        // Display a confirmation message
+        alert(`Thank you ${name}! Your booking for ${room} on ${date} has been confirmed.`);
+
+        // Clear the form
+        document.getElementById('booking-form').reset();
+    } else {
+        alert('Please fill out all fields!');
+    }
+});

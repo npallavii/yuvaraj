@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Celebration Room Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(223, 99, 237);">
+
+    <header>
+        <h1>Birthday Celebration Room Booking</h1>
+        <p>Book the best rooms for your birthday party!</p>
+    </header>
+
+    <main>
+        <section class="booking-section">
+            <h2>Book Your Celebration Room</h2>
+
+            <form action="image.html">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="room">Select Room:</label>
+                <select id="room" name="room" required>
+                    <option value="Room A">Room A</option>
+                    <option value="Room B">Room B</option>
+                    <option value="Room C">Room C</option>
+                </select>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <section class="available-rooms">
+            <h2>Available Rooms</h2>
+            <div class="rooms">
+                <div class="room">
+                    <h3>Room A</h3>
+                    <p>Capacity: 20 people</p>
+                    <p>Price: $200</p>
+                </div>
+                <div class="room">
+                    <h3>Room B</h3>
+                    <p>Capacity: 30 people</p>
+                    <p>Price: $250</p>
+                </div>
+                <div class="room">
+                    <h3>Room C</h3>
+                    <p>Capacity: 40 people</p>
+                    <p>Price: $300</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Birthday Celebration Room Bookings</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
